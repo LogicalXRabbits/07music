@@ -1,3 +1,10 @@
+const http = require('http');
+const express = require('express');
+const app = express();
+app.get("/", (request, response) => {
+  console.log('Start Server');
+  response.sendStatus(200);
+});
 const MusicBot = require("./structures/MusicClient");
 const client = new MusicBot();
 module.exports = client; 
