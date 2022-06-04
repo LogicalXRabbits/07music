@@ -2,7 +2,7 @@ const http = require('http');
 const express = require('express');
 const app = express();
 app.get("/", (request, response) => {
-  console.log('Start Server');
+  console.log('Start Server 07');
   response.sendStatus(200);
 });
 const MusicBot = require("./structures/MusicClient");
