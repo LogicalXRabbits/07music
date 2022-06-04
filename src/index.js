@@ -1,10 +1,12 @@
-const http = require('http');
-const express = require('express');
+const express = require('express')
 const app = express();
-app.get("/", (request, response) => {
-  console.log('Start Server 07');
-  response.sendStatus(200);
-});
+const port = 3000
+
+app.get('/', (req, res) => res.send('bot aktif'))
+
+app.listen(port, () =>
+console.log(`Your app is listening a http://localhost:${port}`)
+);
 const MusicBot = require("./structures/MusicClient");
 const client = new MusicBot();
 module.exports = client; 
