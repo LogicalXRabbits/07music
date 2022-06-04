@@ -13,10 +13,10 @@ run: async (client) => {
             activities: [
                 {
                     name: status,
-                    type: "PLAYING"
+                    type: "WATCHING"
                 }
             ],
-            status: "idle"
+            status: "Do Not Distrub"
         });
     }, 10000)
  }
